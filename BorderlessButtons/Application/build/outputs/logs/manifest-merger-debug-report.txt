@@ -1,0 +1,95 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:1-48:12
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:1-48:12
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:1-48:12
+MERGED from [com.android.support:support-v13:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/7cde5626f1a68f8a5e0781cf4063f2da/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2695aa87639a7e5c3c8874c759b23931/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/832702006a1b07451e5c44f2af8ccd4e/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/7bbb8816a3420e1a24a18ea03dcf85b9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/cc3835d0ae9a18407310141376ae14ad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/bca83218fb4c6009e8018eeec3b39a0c/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/29ee76a6bdcce171e198678522a1dea0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/7c701b3cc7dce21dfaa80c73225863bb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/59374b53099ade9d19b90a5ea7b4260f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d30d0b0712d08ad0a03a8c85f796b01f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f16c1b5d33129e8e37c223c0ea55d29f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/55cac693c930da9da87ade05587ddec7/AndroidManifest.xml:17:1-24:12
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:1-48:12
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:1-48:12
+	package
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:18:5-52
+	android:versionName
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:20:5-30
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:17:11-69
+	android:versionCode
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:19:5-28
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+application
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:33:5-46:19
+	android:label
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:33:18-50
+	android:icon
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:34:9-45
+	android:allowBackup
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:36:9-35
+	android:theme
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:35:9-44
+activity#com.example.android.borderlessbuttons.MainActivity
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:38:9-44:20
+	android:label
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:39:13-45
+	android:name
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:38:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:40:13-43:29
+action#android.intent.action.MAIN
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:41:17-69
+	android:name
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:41:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:42:17-77
+	android:name
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml:42:27-74
+uses-sdk
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+MERGED from [com.android.support:support-v13:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/7cde5626f1a68f8a5e0781cf4063f2da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v13:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/7cde5626f1a68f8a5e0781cf4063f2da/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2695aa87639a7e5c3c8874c759b23931/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2695aa87639a7e5c3c8874c759b23931/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/832702006a1b07451e5c44f2af8ccd4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/832702006a1b07451e5c44f2af8ccd4e/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/7bbb8816a3420e1a24a18ea03dcf85b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/7bbb8816a3420e1a24a18ea03dcf85b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/cc3835d0ae9a18407310141376ae14ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/cc3835d0ae9a18407310141376ae14ad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/bca83218fb4c6009e8018eeec3b39a0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/bca83218fb4c6009e8018eeec3b39a0c/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/29ee76a6bdcce171e198678522a1dea0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/29ee76a6bdcce171e198678522a1dea0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/7c701b3cc7dce21dfaa80c73225863bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/7c701b3cc7dce21dfaa80c73225863bb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/59374b53099ade9d19b90a5ea7b4260f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/59374b53099ade9d19b90a5ea7b4260f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d30d0b0712d08ad0a03a8c85f796b01f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/d30d0b0712d08ad0a03a8c85f796b01f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f16c1b5d33129e8e37c223c0ea55d29f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/f16c1b5d33129e8e37c223c0ea55d29f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/55cac693c930da9da87ade05587ddec7/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /Users/shreyas/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/55cac693c930da9da87ade05587ddec7/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		ADDED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
+		INJECTED from /Users/shreyas/AndroidStudioProjects/BorderlessButtons/Application/src/main/AndroidManifest.xml
