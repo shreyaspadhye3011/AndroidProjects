@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="15dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/first"
+            android:text="First Number"
+            android:textColor="@color/TextColor" />
+        <EditText
+            android:id="@+id/input1"
+            android:hint="0"
+            android:inputType="number" />
+
+        <TextView
+            android:id="@+id/second"
+            android:layout_marginTop="10dp"
+            android:text="Second Number"
+            android:textColor="@color/TextColor" />
+        <EditText
+            android:id="@+id/input2"
+            android:hint="0"
+            android:inputType="number" />
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15pt"
+            android:id="@+id/tableRow1">
+            <Button
+                android:text="+"
+                android:textSize="8pt"
+                android:id="@+id/addbtn"
+                android:layout_width="25pt"
+                android:layout_height="25pt"
+                android:layout_weight="1"/>
+            <Button
+                android:text="-"
+                android:textSize="8pt"
+                android:id="@+id/subbtn"
+                android:layout_height="25pt"
+                android:layout_width="25pt"
+                android:layout_weight="1"
+                android:onClick="handleClick" />
+            <Button
+                android:text="*"
+                android:textSize="8pt"
+                android:id="@+id/mulbtn"
+                android:layout_width="25pt"
+                android:layout_height="25pt"
+                android:layout_weight="1"
+                android:onClick="handleClick" />
+            <Button
+                android:text="/"
+                android:textSize="8pt"
+                android:id="@+id/dividebtn"
+                android:layout_width="25pt"
+                android:layout_height="25pt"
+                android:layout_weight="1"
+                android:onClick="handleClick" />
+        </TableRow>
+
+        <TextView
+            android:id="@+id/result"
+            android:layout_marginTop="15dp"
+            android:text="Result"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"/>
+    </TableLayout>
+</LinearLayout>
