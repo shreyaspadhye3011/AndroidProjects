@@ -11,7 +11,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="My Activity"
+        android:layout_gravity="center"
+        android:text="Top Automobile Companies"
         android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
     <LinearLayout
@@ -19,13 +20,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@color/colorCustom"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:id="@+id/toyota">
 
-        <Button
-            android:id="@+id/button2"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Img" />
+        <!--<Button-->
+            <!--android:id="@+id/button2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="1"-->
+            <!--android:enabled="false"/>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -36,13 +39,13 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Video Tile"
+                android:text="1. Toyota Motors"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="100 Videos"
+                android:text="https://en.wikipedia.org/wiki/Toyota"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
         </LinearLayout>
@@ -53,13 +56,15 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:background="@color/colorCustom"
-        android:padding="15dp">
+        android:padding="15dp"
+        android:id="@+id/gm">
 
-        <Button
-            android:id="@+id/button3"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:text="Img" />
+        <!--<Button-->
+            <!--android:id="@+id/button3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="2"-->
+            <!--android:enabled="false"/>-->
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -70,13 +75,85 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="My Video Tile 2"
+                android:text="2. General Motors"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="200 Videos"
+                android:text="https://en.wikipedia.org/wiki/General_Motors"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorCustom"
+        android:padding="15dp"
+        android:id="@+id/volks">
+
+        <!--<Button-->
+            <!--android:id="@+id/volksbtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="3"-->
+            <!--android:enabled="false"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Volkswagen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://en.wikipedia.org/wiki/Volkswagen"
+                android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorCustom"
+        android:padding="15dp"
+        android:id="@+id/nissan">
+
+        <!--<Button-->
+            <!--android:id="@+id/nissanbtn"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="3"-->
+            <!--android:enabled="false"/>-->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Nissan"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="https://en.wikipedia.org/wiki/Nissan"
                 android:textAppearance="@style/TextAppearance.AppCompat.Subhead" />
 
         </LinearLayout>
