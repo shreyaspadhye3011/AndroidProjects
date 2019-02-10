@@ -59,5 +59,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        LinearLayout hyundai = (LinearLayout)findViewById(R.id.hyundai);
+        hyundai.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Opening Hyundai Wiki", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), WebViewClass.class);
+                intent.putExtra("URL", "https://en.wikipedia.org/wiki/Hyundai_Motor_Company");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout fordView = (LinearLayout)findViewById(R.id.ford);
+        fordView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Opening Ford Wiki", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), WebViewClass.class);
+                intent.putExtra("URL", "https://en.wikipedia.org/wiki/Ford_Motor_Company");
+                startActivity(intent);
+            }
+        });
+
+        LinearLayout hondaView = (LinearLayout)findViewById(R.id.honda);
+        hondaView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(MainActivity.this, "Opening Honda Wiki", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), WebViewClass.class);
+                intent.putExtra("URL", "https://en.wikipedia.org/wiki/Honda");
+                startActivity(intent);
+            }
+        });
     }
 }
