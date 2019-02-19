@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">quiz2</string>
+    <string name="errorText">Student already registered!</string>
+</resources>
