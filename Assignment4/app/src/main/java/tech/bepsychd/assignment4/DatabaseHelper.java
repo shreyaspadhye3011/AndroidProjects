@@ -51,10 +51,10 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         return data;
     }
 
-    public Cursor getItemRef(String concatString) {
+    public Cursor getItemRef(Integer id) {
         SQLiteDatabase db = this.getWritableDatabase();
-        concatString = "'"+ concatString +"'";
-        String query = "SELECT * FROM "+ TABLE_NAME + " WHERE "+ COL3 +" ="+concatString;
+        String query = "SELECT * FROM "+ TABLE_NAME + " WHERE "+ COL1 +" ="+id;
+        System.out.println("*************");
         System.out.println(query);
         Cursor data = db.rawQuery(query, null);
         return data;

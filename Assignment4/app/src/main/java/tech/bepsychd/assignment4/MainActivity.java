@@ -55,31 +55,26 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 idEdit = findViewById(R.id.id);
                 //TODO: Add only spaces check
-                //TODO: Test 0000 case - wjether it rasies issues in the int datatype
+                //TODO: Test 0000 case - whether it raises issues in the int datatype
                 String id = idEdit.getText().toString();
-                if (id != null) {
-
-                }
+                if (id != null && !id.isEmpty()) {
+                    if(findElement(id)) {
+                        // write update code
+                    } else
+                        Toast.makeText(MainActivity.this, "Record for ID: "+id+" not found.", Toast.LENGTH_SHORT).show();
+                } else
+                    Toast.makeText(MainActivity.this, "Please enter ID", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-//    private boolean getItemReference(String id) {
-//        Cursor data = dbHelper.getData();
-//        Integer idStr = (Integer) id;
-//        Boolean found = false;
-//        while (data.moveToNext()) {
-//            storedMobile = data.getString(1);
-//            storedModel = data.getString(2);
-//            if (storedMobile == mobile && storedModel == model) {
-//                System.out.println("MObile: "+mobile+" Model: "+model+"SMo: ");
-//                found = true;
-//            }
-//        }
-//
-//        if(found)
-//            return true;
-//        else
-//            return false;
-//    }
+    private boolean findElement(String id) {
+        //TODO: test whether any value can break 'valueOf'
+        Integer idVal = Integer.valueOf(id);
+        Cursor data = dbHelper.getItemRef(idVal);
+        if (data.moveToNext())
+            return true;
+        return false;
+    }
+
 }
