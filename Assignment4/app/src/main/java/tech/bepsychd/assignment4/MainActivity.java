@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         dbHelper = new DatabaseHelper(this);
 
+        //ADD DATA
         addBtn = (Button) findViewById(R.id.add);
         nameEdit = (EditText) findViewById(R.id.name);
         emailEdit = (EditText) findViewById(R.id.email);
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //VIEW DATA
         viewBtn = (Button) findViewById(R.id.seeall);
         viewBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -49,28 +51,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //UPDATE DATA
         Button updateBtn = findViewById(R.id.update);
         updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 idEdit = findViewById(R.id.id);
                 //TODO: Add only spaces check
-                //TODO: Test 0000 case - whether it raises issues in the int datatype
                 String id = idEdit.getText().toString();
+                //TODO: test whether any value can break 'valueOf'
                 if (id != null && !id.isEmpty()) {
-                    if(findElement(id)) {
-                        // write update code
+                    //Note: As integral id used, '003' considered as '3' (default working of valueOf)
+                    Integer idVal = Integer.valueOf(id);
+                    if(findElement(idVal)) {
+                        String name = nameEdit.getText().toString();
+                        String email = emailEdit.getText().toString();
+                        String show = showEdit.getText().toString();
+                        dbHelper.updateData(idVal, name, email, show);
+                        Toast.makeText(MainActivity.this, "Record Updated.", Toast.LENGTH_LONG).show();
                     } else
-                        Toast.makeText(MainActivity.this, "Record for ID: "+id+" not found.", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Record for ID: "+idVal+" not found.", Toast.LENGTH_LONG).show();
                 } else
                     Toast.makeText(MainActivity.this, "Please enter ID", Toast.LENGTH_SHORT).show();
             }
         });
     }
 
-    private boolean findElement(String id) {
-        //TODO: test whether any value can break 'valueOf'
-        Integer idVal = Integer.valueOf(id);
+    private boolean findElement(Integer idVal) {
         Cursor data = dbHelper.getItemRef(idVal);
         if (data.moveToNext())
             return true;
