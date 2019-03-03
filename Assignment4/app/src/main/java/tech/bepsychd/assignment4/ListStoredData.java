@@ -22,21 +22,14 @@ public class ListStoredData extends AppCompatActivity {
         mListView = findViewById(R.id.listview);
         dbHelper = new DatabaseHelper(this);
         populateData();
-
-        Button delBtn = (Button) findViewById(R.id.button);
-        delBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-              dbHelper.deleteData();
-            }
-        });
     }
 
     private void populateData() {
         Cursor data = dbHelper.getData();
+        System.out.println("//////COUNT!!"+data.getColumnCount());
         ArrayList<String> listData = new ArrayList<>();
         while (data.moveToNext()) {
-            listData.add("Mobile: " + data.getString(1) +" | Model: "+ data.getString(2));
+            listData.add("ID: " + data.getInt(0) +"\nName: "+ data.getString(1) +"\nEmail: "+data.getString(2) +"\nFavorite Tv Show: " + data.getString(3));
         }
 
         ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);

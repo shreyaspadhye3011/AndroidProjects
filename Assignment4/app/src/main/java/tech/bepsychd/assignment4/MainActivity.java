@@ -13,8 +13,9 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHelper dbHelper;
     private Button addBtn;
     private Button viewBtn;
-    private EditText mobileEdit;
-    private EditText modelEdit;
+    private EditText nameEdit;
+    private EditText emailEdit;
+    private EditText showEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,20 +24,17 @@ public class MainActivity extends AppCompatActivity {
         dbHelper = new DatabaseHelper(this);
 
         addBtn = (Button) findViewById(R.id.add);
-        mobileEdit = (EditText) findViewById(R.id.name);
-        modelEdit = (EditText) findViewById(R.id.email);
+        nameEdit = (EditText) findViewById(R.id.name);
+        emailEdit = (EditText) findViewById(R.id.email);
+        showEdit = (EditText) findViewById(R.id.tvshow);
         addBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String mobile = mobileEdit.getText().toString();
-                String model = modelEdit.getText().toString();
-                Boolean found = getItemReference(mobile, model);
-                if (found)
-                    Toast.makeText(MainActivity.this, "Record already exists!", Toast.LENGTH_LONG).show();
-                else {
-                    dbHelper.addData(mobile, model);
-                    Toast.makeText(MainActivity.this, "Data Added.", Toast.LENGTH_LONG).show();
-                }
+                String name = nameEdit.getText().toString();
+                String email = emailEdit.getText().toString();
+                String show = showEdit.getText().toString();
+                dbHelper.addData(name, email, show);
+                Toast.makeText(MainActivity.this, "Record Added.", Toast.LENGTH_LONG).show();
             }
         });
 

@@ -8,10 +8,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
     private static final String TAG = "DatabaseHelper";
-    private static final String TABLE_NAME = "mobile_model";
-    private static final String COL1 = "mobile";
-    private static final String COL2 = "model";
-    private static final String COL3 = "concatString";
+    private static final String TABLE_NAME = "tv_show";
+    private static final String COL1 = "id";
+    private static final String COL2 = "name";
+    private static final String COL3 = "email";
+    private static final String COL4 = "show";
 
     public DatabaseHelper(Context context) {
         super(context, TABLE_NAME, null, 1);
@@ -19,7 +20,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String createTable = "CREATE TABLE " + TABLE_NAME + "(mobile TEXT, " + COL2 + " TEXT, "+ COL3 + " TEXT)";
+        String createTable = "CREATE TABLE " + TABLE_NAME + "(ID INTEGER PRIMARY KEY AUTOINCREMENT, " + COL2 + " TEXT, "+ COL3 + " TEXT, "+COL4 +" TEXT)";
         db.execSQL(createTable);
     }
 
@@ -28,13 +29,12 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         db.execSQL("DROP TABLE IF EXISTS "+ TABLE_NAME);
     }
 
-    public boolean addData(String mobile, String model) {
+    public boolean addData(String name, String email, String show) {
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
-        String concatString = mobile + model;
-        contentValues.put(COL1, mobile);
-        contentValues.put(COL2, model);
-        contentValues.put(COL3, concatString);
+        contentValues.put(COL2, name);
+        contentValues.put(COL3, email);
+        contentValues.put(COL4, show);
 
         long result = db.insert(TABLE_NAME, null, contentValues);
 
@@ -48,6 +48,7 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM "+ TABLE_NAME;
         Cursor data = db.rawQuery(query, null);
+        System.out.print("//////FLOW!!"+data.getColumnCount());
         return data;
     }
 
