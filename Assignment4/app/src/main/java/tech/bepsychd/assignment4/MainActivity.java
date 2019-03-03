@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText nameEdit;
     private EditText emailEdit;
     private EditText showEdit;
+    private EditText idEdit;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity {
                 String email = emailEdit.getText().toString();
                 String show = showEdit.getText().toString();
                 dbHelper.addData(name, email, show);
+                //TODO: Add created id's info in Toast
                 Toast.makeText(MainActivity.this, "Record Added.", Toast.LENGTH_LONG).show();
             }
         });
@@ -46,49 +48,38 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-    }
 
+        Button updateBtn = findViewById(R.id.update);
+        updateBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                idEdit = findViewById(R.id.id);
+                //TODO: Add only spaces check
+                //TODO: Test 0000 case - wjether it rasies issues in the int datatype
+                String id = idEdit.getText().toString();
+                if (id != null) {
 
-
-    private boolean getItemReference(String mobile, String model) {
-        String concatString = mobile + model;
-        Cursor data = dbHelper.getItemRef(concatString);
-        if (data.moveToNext()) {
-            return true;
-        } else
-            return false;
-    }
-
-    private boolean getUpdatedItemReference(String mobile, String model) {
-        Cursor data = dbHelper.getData();
-        String storedMobile;
-        String storedModel;
-        Boolean found = false;
-        while (data.moveToNext()) {
-            storedMobile = data.getString(1);
-            storedModel = data.getString(2);
-            if (storedMobile == mobile && storedModel == model) {
-                System.out.println("MObile: "+mobile+" Model: "+model+"SMo: ");
-                found = true;
+                }
             }
-        }
-
-        if(found)
-            return true;
-        else
-            return false;
+        });
     }
 
-//    private void populateListView() {
-//        Cursor data = mDatabaseHelper.getData();
-//        ArrayList<String> listData = new ArrayList<>();
+//    private boolean getItemReference(String id) {
+//        Cursor data = dbHelper.getData();
+//        Integer idStr = (Integer) id;
+//        Boolean found = false;
 //        while (data.moveToNext()) {
-//            // get all names and put in list
-//            listData.add(data.getString(1));
+//            storedMobile = data.getString(1);
+//            storedModel = data.getString(2);
+//            if (storedMobile == mobile && storedModel == model) {
+//                System.out.println("MObile: "+mobile+" Model: "+model+"SMo: ");
+//                found = true;
+//            }
 //        }
 //
-//        ListAdapter adapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, listData);
-//        mListView.setAdapter(adapter);
-//
+//        if(found)
+//            return true;
+//        else
+//            return false;
 //    }
 }

@@ -26,7 +26,6 @@ public class ListStoredData extends AppCompatActivity {
 
     private void populateData() {
         Cursor data = dbHelper.getData();
-        System.out.println("//////COUNT!!"+data.getColumnCount());
         ArrayList<String> listData = new ArrayList<>();
         while (data.moveToNext()) {
             listData.add("ID: " + data.getInt(0) +"\nName: "+ data.getString(1) +"\nEmail: "+data.getString(2) +"\nFavorite Tv Show: " + data.getString(3));

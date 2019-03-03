@@ -48,7 +48,6 @@ public class DatabaseHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         String query = "SELECT * FROM "+ TABLE_NAME;
         Cursor data = db.rawQuery(query, null);
-        System.out.print("//////FLOW!!"+data.getColumnCount());
         return data;
     }
 
