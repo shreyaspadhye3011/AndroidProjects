@@ -38,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
                 String email = emailEdit.getText().toString();
                 String show = showEdit.getText().toString();
                 dbHelper.addData(name, email, show);
-                //TODO: Add created id's info in Toast
-                //TODO: See if blank entry check needs to be added?
                 Toast.makeText(MainActivity.this, "Record Added.", Toast.LENGTH_LONG).show();
             }
         });
