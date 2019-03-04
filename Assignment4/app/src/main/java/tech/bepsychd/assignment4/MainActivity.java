@@ -13,6 +13,8 @@ public class MainActivity extends AppCompatActivity {
     private DatabaseHelper dbHelper;
     private Button addBtn;
     private Button viewBtn;
+    Button updateBtn;
+    Button deleteBtn;
     private EditText nameEdit;
     private EditText emailEdit;
     private EditText showEdit;
@@ -37,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
                 String show = showEdit.getText().toString();
                 dbHelper.addData(name, email, show);
                 //TODO: Add created id's info in Toast
+                //TODO: See if blank entry check needs to be added?
                 Toast.makeText(MainActivity.this, "Record Added.", Toast.LENGTH_LONG).show();
             }
         });
@@ -52,14 +55,12 @@ public class MainActivity extends AppCompatActivity {
         });
 
         //UPDATE DATA
-        Button updateBtn = findViewById(R.id.update);
+        updateBtn = findViewById(R.id.update);
         updateBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 idEdit = findViewById(R.id.id);
-                //TODO: Add only spaces check
                 String id = idEdit.getText().toString();
-                //TODO: test whether any value can break 'valueOf'
                 if (id != null && !id.isEmpty()) {
                     //Note: As integral id used, '003' considered as '3' (default working of valueOf)
                     Integer idVal = Integer.valueOf(id);
@@ -75,6 +76,30 @@ public class MainActivity extends AppCompatActivity {
                     Toast.makeText(MainActivity.this, "Please enter ID", Toast.LENGTH_SHORT).show();
             }
         });
+
+        //DELETE DATA
+        deleteBtn = findViewById(R.id.delete);
+        deleteBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                idEdit = findViewById(R.id.id);
+                String id = idEdit.getText().toString();
+                if (id != null && !id.isEmpty()) {
+                    //Note: As integral id used, '003' considered as '3' (default working of valueOf)
+                    Integer idVal = Integer.valueOf(id);
+                    if(findElement(idVal)) {
+                        String name = nameEdit.getText().toString();
+                        String email = emailEdit.getText().toString();
+                        String show = showEdit.getText().toString();
+                        dbHelper.deleteData(idVal);
+                        Toast.makeText(MainActivity.this, "Record Deleted.", Toast.LENGTH_LONG).show();
+                    } else
+                        Toast.makeText(MainActivity.this, "Record for ID: "+idVal+" not found.", Toast.LENGTH_LONG).show();
+                } else
+                    Toast.makeText(MainActivity.this, "Please enter ID", Toast.LENGTH_SHORT).show();
+            }
+        });
+
     }
 
     private boolean findElement(Integer idVal) {
